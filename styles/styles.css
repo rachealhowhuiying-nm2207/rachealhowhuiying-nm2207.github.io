@@ -1,43 +1,121 @@
-body {
-  background-color: #605adb;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: white;
-  padding-left: 12px;
-  padding-top: 4px;
-}
-
-.mouse {
-  font-size: 24px;
-}
-
-.counter {
-  color: #fbbf24;
-}
-
-h2 {
-  color: #f9a8d4;
-}
-
-/* CSS */
-button {
-  appearance: none;
-  background-color: #b45309;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+/*style the navigation bar. Reference source is: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar*/
+*{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
+}
+
+/*set some formatting for the introductory text of each link from the navigation bar*/
+.introText {
+display: flex;
+align-items: center;
+justify-content: center; 
+margin-top: 50px;
+margin-bottom: 50px; /*ensure there is space around the text to make it stand out*/
+}
+
+/*set a general formati for the entire navigation bar*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* min-height: 10vh; */
+  background-color: rgb(139, 136, 235);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*add styles to the heading in the "Navigation Bar"*/
+.navBar {
+display: flex;
+text-decoration-line: overline;
+text-decoration-color: azure;
+color: white;
+font-size: medium;
+font-weight: bold;
+font-display: swap;
+}
+
+/*format the links in navigation bar*/
+.navLinks {
+display: flex;
+justify-content: space-around;
+width: 30%
+}
+
+/*set list-style to none to prevent list formatting*/
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  color: lightgrey;
+  font-size: medium;
+  font-weight: bold;
+  font-display: swap;
+  padding: 14px 16px;
+}
+
+/*add color for each link when hovering above it*/
+.navLinks a:hover:not(active) {
+  background-color: rgb(245, 211, 236);
+}
+/*add color for the lunk that is chosen*/
+.navLinks li a.active{
+  background-color: rgb(128, 55, 230);
+}
+
+.pokeball{
+  width: 10%;
+  margin-left: 45%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.pokeBtn{
+  border: none;
+  background-color: lightblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
+  margin: 4px 2px;
 }
 
-button:hover {
-  background-color: #92400e;
+#image-container {
+  display: none;
+}
+
+#storyboardImage{
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* Now let's apply grid for wider viewports. */
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+  }
+  /* Define the grid */
+  .container {
+    display: grid;
+    grid-template-columns: 18% 60% 18%;
+    grid-gap: 2% 2%;
+    grid-template-rows: 10% auto 10%;
+  }
+  /* Place items on the grid */
+  .header {
+    grid-column: 1 / span 3;
+
+  }
+  .sidebar {
+    grid-row-end: span 2;
+  }
+  .content {
+    grid-column: 2;
+  }
+
 }

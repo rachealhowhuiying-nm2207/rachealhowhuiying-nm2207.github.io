@@ -1,16 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <title>My NM2207 GitHub Portfolio</title>
+    <title>My NM2207 GitHub Homepage</title>
     <script src="scripts/counter.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
-    <h1>Hello world! 🚀</h1>
-    <h2>This is a site hosted on GitHub Pages.</h2>
-    <h3>Here's a hungry mouse. Please feed him!</h3>
-    <h3 class="mouse">🐁</h3>
-    <h3>Food counter: <span class="counter">0</span> 🥙</h3>
-    <button>Feed!</button>
+  <body> 
+     <!--Place navigation bar at the top of webpage-->
+    <nav style="min-height: 10vh;">
+      <div class="navBar"><h3>Navigation Bar</h3></div> <!--This is the navigation bar to toggle between the homepage and actual datastory-->
+    <ul class="navLinks"> <!--This class of "navLinks" will be styled in styles.css-->
+      <!--Make the landing page be index.html aka the the user will first start from the homepage.-->
+      <li><a class="active" href="index.html">Homepage</a></li> <!--Homepage will contain storybord and brief outline of my datastory-->
+      <li><a href="../rachealhowhuiying-nm2207.github.io/datastory.html">DataStory</a></li>
+    </ul>
+    </nav>
+    <!--Give an intro text to the user when he/she arrives on the homepage.-->
+  <div class="introText">Welcome! This Homepage will give you an overview of my NM2207 final project!</div>
+
+  <!--insert image of storyboard right below the intro text-->
+  <img id="storyboardImage" src="storyboard.png">
   </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DataStory</title>
+        <script src="scripts/counter.js"></script>
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <nav style="min-height: 10vh;">
+            <div class="navBar"><h3>Navigation Bar</h3></div> <!--This is the navigation bar to toggle between the homepage and actual datastory-->
+          <ul class="navLinks"> <!--This class of "navLinks" will be styled in styles.css-->
+            <!--Make the landing page be index.html aka the the user will first start from the homepage.-->
+            <li><a href="index.html">Homepage</a></li> <!--Homepage will contain storybord and brief outline of my datastory-->
+            <li><a class="active" href="../rachealhowhuiying-nm2207.github.io/datastory.html">DataStory</a></li>
+          </ul>
+        </nav>
+        
+        <div class="introText">What is the most popular Pokemon for each region in 2020?</div>
+
+        <img class="pokeball" src="pokeball.png">
+        <br/>
+        <div class="center">
+            <button class="pokeBtn" onclick="showPokeball()" type="button">Show Pokeball</button>
+        </div>
+
+        <div class="center" style="padding-top:5%">
+            <img src="allregionmap.png" onclick="showMap()"><br/>
+            
+        </div>
+        <p class="center">When certain part of a specific region in the map is clicked, website will bring user to another page to show image of the most popular pokemon in that region with a himbo stat chart to show its stats</p>
+
+    </body>
+</html>
+
