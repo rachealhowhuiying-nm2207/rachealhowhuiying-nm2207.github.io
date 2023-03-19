@@ -1,4 +1,4 @@
-/*style the navigation bar. Reference source is: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar*/
+/*style the navigation bar, reference source is: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar*/
 *{
   margin: 0px;
   padding: 0px;
@@ -14,7 +14,7 @@ margin-top: 50px;
 margin-bottom: 50px; /*ensure there is space around the text to make it stand out*/
 }
 
-/*set a general formati for the entire navigation bar*/
+/*set a general formating for the entire navigation bar*/
 nav {
   display: flex;
   justify-content: space-around;
