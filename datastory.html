@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>DataStory</title>
-        <script src="scripts/counter.js"></script>
-        <link rel="stylesheet" href="styles/styles.css" />
-    </head>
-    <body>
-        <nav style="min-height: 10vh;">
-            <div class="navBar"><h3>Navigation Bar</h3></div> <!--This is the navigation bar to toggle between the homepage and actual datastory-->
-          <ul class="navLinks"> <!--This class of "navLinks" will be styled in styles.css-->
+
+<head>
+    <title>DataStory</title>
+    <script src="scripts/counter.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <nav style="min-height: 10vh;">
+        <div class="navBar">
+            <h3>Navigation Bar</h3>
+        </div> <!--This is the navigation bar to toggle between the homepage and actual datastory-->
+        <ul class="navLinks"> <!--This class of "navLinks" will be styled in styles.css-->
             <!--Make the landing page be index.html aka the the user will first start from the homepage.-->
-            <li><a href="index.html">Homepage</a></li> <!--Homepage will contain storybord and brief outline of my datastory-->
+            <li><a href="index.html">Homepage</a></li>
+            <!--Homepage will contain storybord and brief outline of my datastory-->
             <li><a class="active" href="datastory.html">DataStory</a></li>
-          </ul>
-        </nav>
-        
-        <div class="introText">What is the most popular Pokemon for each region in 2020?</div>
+        </ul>
+    </nav>
 
-        <img class="pokeball" src="pokeball.png">
-        <br/>
-        <div class="center">
-            <button class="pokeBtn" onclick="showPokeball()" type="button">Show Pokeball</button>
-        </div>
+    <div class="introText">What is the most popular Pokemon for each region in 2020?</div>
 
-        <div class="center" style="padding-top:5%">
-            <img src="allregionmap.png" onclick="showMap()"><br/>
-            
-        </div>
-        <p class="center">When certain part of a specific region in the map is clicked, website will bring user to another page to show image of the most popular pokemon in that region with a himbo stat chart to show its stats</p>
+    <img class="pokeball" src="pokeball.png">
+    <br />
+    <!--Create a button below the pokeball to run "animation" of images-->
+    <div class="center">
+        <button class="pokeBtn" onclick="showPokeball()" type="button">Click here!</button>
+    </div>
 
-    </body>
+    <div class="center" style="padding-top:5%">
+        <img class="regionMap" src="allregionmap.png" onclick="showMap()"><br /> <!--demo of pop up-->
+
+        <!--Reference modal box method for the map of diff regions: https://www.w3schools.com/howto/howto_css_modals.asp-->
+    </div>
+    <h3 class="center"> Modal box method used for map above, referred from w3schools:<br>
+        This image of all regions will be cropped into individual image of each region. Each region will then be taking
+        a modal box. When a specific region in the map is clicked, the user will be shown the content in the respective
+        modal box. The image of the most popular pokemon in that region with a radar chart to show its stats can be
+        seen from the modal box. At the same time, the theme song for the clicked region will be played on click.</h3>
+
+</body>
+
 </html>
-

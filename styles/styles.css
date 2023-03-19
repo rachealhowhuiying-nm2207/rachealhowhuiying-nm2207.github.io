@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/*set some formatting for the introductory text of each link from the navigation bar*/
+/*set some formatting for the placement of the introductory text efor each html links from the navigation bar*/
 .introText {
 display: flex;
 align-items: center;
@@ -59,9 +59,21 @@ width: 30%
 .navLinks a:hover:not(active) {
   background-color: rgb(245, 211, 236);
 }
+
 /*add color for the lunk that is chosen*/
 .navLinks li a.active{
   background-color: rgb(128, 55, 230);
+}
+
+/*format the boxForContent, reference: https://linuxhint.com/how-to-make-html-container-box-in-html/*/
+.boxForContent{
+  display:flexbox;
+  padding: 10px;
+  margin: 30px 110px;
+  text-align: center;
+  width: 85%;
+  height: 300px;
+  border:rgb(139, 136, 235) 5px solid;
 }
 
 .pokeball{
@@ -74,6 +86,7 @@ width: 30%
   justify-content: center;
 }
 
+/*format the placement of the button for pokeball*/
 .pokeBtn{
   border: none;
   background-color: lightblue;
@@ -85,13 +98,20 @@ width: 30%
   margin: 4px 2px;
 }
 
+.regionMap {
+  width: 35%;
+  padding-bottom: 2%;
+} 
+
 #image-container {
   display: none;
 }
 
+/*format the placement of the image of storyboard*/
 #storyboardImage{
   width: 80%;
   margin-left: 10%;
+  padding-top: 50px;
 }
 
 /* Now let's apply grid for wider viewports. */
