@@ -1,5 +1,5 @@
 /*style the navigation bar, reference source is: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar*/
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -7,11 +7,12 @@
 
 /*set some formatting for the placement of the introductory text efor each html links from the navigation bar*/
 .introText {
-display: flex;
-align-items: center;
-justify-content: center; 
-margin-top: 50px;
-margin-bottom: 50px; /*ensure there is space around the text to make it stand out*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /*ensure there is space around the text to make it stand out*/
 }
 
 /*set a general formating for the entire navigation bar*/
@@ -26,20 +27,32 @@ nav {
 
 /*add styles to the heading in the "Navigation Bar"*/
 .navBar {
-display: flex;
-text-decoration-line: overline;
-text-decoration-color: azure;
-color: white;
-font-size: medium;
-font-weight: bold;
-font-display: swap;
+  display: flex;
+  text-decoration-line: overline;
+  text-decoration-color: azure;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  font-display: swap;
 }
 
 /*format the links in navigation bar*/
 .navLinks {
-display: flex;
-justify-content: space-around;
-width: 30%
+  display: flex;
+  justify-content: space-around;
+  width: 30%
+}
+
+/*format the sticky navBar when user is scrolling*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*add top padding to the navBar*/
+.sticky+.navlinks {
+  padding-top: 50px;
 }
 
 /*set list-style to none to prevent list formatting*/
@@ -61,33 +74,36 @@ width: 30%
 }
 
 /*add color for the lunk that is chosen*/
-.navLinks li a.active{
+.navLinks li a.active {
   background-color: rgb(128, 55, 230);
 }
 
 /*format the boxForContent, reference: https://linuxhint.com/how-to-make-html-container-box-in-html/*/
-.boxForContent{
-  display:flexbox;
+.boxForContent {
+  display: flexbox;
   padding: 10px;
   margin: 30px 110px;
   text-align: center;
   width: 85%;
   height: 300px;
-  border:rgb(139, 136, 235) 5px solid;
+  border: rgb(139, 136, 235) 5px solid;
 }
 
-.pokeball{
-  width: 10%;
-  margin-left: 45%;
+.pokeball {
+  width: 35%;
+  margin-left: 33%;
 }
 
-.center{
+.img-center {
+  margin-left: 24%;
+}
+.center {
   display: flex;
   justify-content: center;
 }
 
 /*format the placement of the button for pokeball*/
-.pokeBtn{
+.pokeBtn {
   border: none;
   background-color: lightblue;
   padding: 15px 32px;
@@ -101,24 +117,60 @@ width: 30%
 .regionMap {
   width: 35%;
   padding-bottom: 2%;
-} 
+}
 
 #image-container {
   display: none;
 }
 
 /*format the placement of the image of storyboard*/
-#storyboardImage{
+#storyboardImage {
   width: 80%;
   margin-left: 10%;
   padding-top: 50px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-top: 2%;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* Now let's apply grid for wider viewports. */
 @media screen and (min-width: 40em) {
-  .container > * {
+  .container>* {
     margin-bottom: 0;
   }
+
   /* Define the grid */
   .container {
     display: grid;
@@ -126,16 +178,90 @@ width: 30%
     grid-gap: 2% 2%;
     grid-template-rows: 10% auto 10%;
   }
+
   /* Place items on the grid */
   .header {
     grid-column: 1 / span 3;
 
   }
+
   .sidebar {
     grid-row-end: span 2;
   }
+
   .content {
     grid-column: 2;
   }
 
+}
+
+/* Hide modals by default
+.modal {
+  display: none;
+} */
+
+/* Style the buttons 
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Style the modal content 
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the close button 
+.close-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

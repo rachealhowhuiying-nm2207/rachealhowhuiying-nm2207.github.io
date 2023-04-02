@@ -3,7 +3,7 @@
 
 <head>
     <title>DataStory</title>
-    <script src="scripts/counter.js"></script>
+    <script src="scripts/counter.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
@@ -20,25 +20,70 @@
         </ul>
     </nav>
 
-    <div class="introText">What is the most popular Pokemon for each region in 2020?</div>
+    <div class="introText">What is the <b> 'secret recipe"</b> to making a popular Pokemon?</div>
 
-    <img class="pokeball" src="pokeball.png">
+    <img id="image" class="pokeball" src="pokeball.png">
     <br />
-    <!--Create a button below the pokeball to run "animation" of images-->
-    <div class="center">
-        <button class="pokeBtn" onclick="showPokeball()" type="button">Click here!</button>
-    </div>
 
-    <div class="center" style="padding-top:5%">
-        <img class="regionMap" src="allregionmap.png" onclick="showMap()"><br /> <!--demo of pop up-->
 
-        <!--Reference modal box method for the map of diff regions: https://www.w3schools.com/howto/howto_css_modals.asp-->
+    <!--Display of 8 regions with buttons below respectively, format referred from (ChatGPT, personal communication, February 16, 2023)
+    Qn asked on ChatGPT: html 3 by 3 grid with 8 images with a button below each images, creating modal box-->
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <img src="kantoRegion.jpg" alt="Image 1">
+            <button id="modal1-btn">Kanto Region</button>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Top Pokemon in Kanto is... Charizard! </br>The chart beside displays the base stats of a Charizard.</h1>
+                <img class="img-center" src="charizardGif.gif">
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <img src="johtoRegion.jpg" alt="Image 2">
+            <button id="modal2-btn">Johto Region</button>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Tooth</p>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <img src="hoennRegion.jpg" alt="Image 3">
+            <button>Hoenn Region</button>
+        </div>
+        <div class="grid-item">
+            <img src="sinnohRegion.jpg" alt="Image 4">
+            <button>Sinnoh Region</button>
+        </div>
+        <div class="grid-item">
+            <img src="unovaRegion.jpg" alt="Image 5">
+            <button>Unova Region</button>
+        </div>
+        <div class="grid-item">
+            <img src="kalosRegion.jpg" alt="Image 6">
+            <button>Kalos Region</button>
+        </div>
+        <div class="grid-item">
+            <img src="alolaRegion.jpg" alt="Image 7">
+            <button>Alola Region</button>
+        </div>
+        <div class="grid-item">
+            <img src="galarRegion.jpg" alt="Image 8">
+            <button>Galar Region</button>
+        </div>
     </div>
     <h3 class="center"> Modal box method used for map above, referred from w3schools:<br>
         This image of all regions will be cropped into individual image of each region. Each region will then be taking
         a modal box. When a specific region in the map is clicked, the user will be shown the content in the respective
         modal box. The image of the most popular pokemon in that region with a radar chart to show its stats can be
         seen from the modal box. At the same time, the theme song for the clicked region will be played on click.</h3>
+
 
 </body>
 
