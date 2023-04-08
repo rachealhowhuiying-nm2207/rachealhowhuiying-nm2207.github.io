@@ -3,6 +3,7 @@
 
 <head>
     <title>DataStory</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="scripts/counter.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
@@ -30,6 +31,7 @@
     Qn asked on ChatGPT: html 3 by 3 grid with 8 images with a button below each images, creating modal box-->
     <div class="grid-container">
 
+    <!--Each image has a button and a modal box.-->
         <div class="grid-item">
             <img src="kantoRegion.jpg" alt="Image 1">
             <button id="modal1-btn">Kanto Region</button>
@@ -38,7 +40,8 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h1>Top Pokemon in Kanto is... Charizard! </br>The chart beside displays the base stats of a Charizard.</h1>
-                <img class="img-center" src="charizardGif.gif">
+                <img class="img-left" src="charizardGif.gif">
+                <canvas id="kantoRadarChart"></canvas>
             </div>
         </div>
 
@@ -49,33 +52,41 @@
         <div id="modal2" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Tooth</p>
+                <h1>Top Pokemon in Johto is... Umbreon! </br>The chart beside displays the base stats of an Umbreon.</h1>
+                <img class="img-left" src="umbreonGif.gif">
+                <canvas id="johtoRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
             <img src="hoennRegion.jpg" alt="Image 3">
             <button>Hoenn Region</button>
+            <canvas id="hoennRadarChart" ></canvas> 
         </div>
         <div class="grid-item">
             <img src="sinnohRegion.jpg" alt="Image 4">
             <button>Sinnoh Region</button>
+            <canvas id="sinnohRadarChart"></canvas> 
         </div>
         <div class="grid-item">
             <img src="unovaRegion.jpg" alt="Image 5">
             <button>Unova Region</button>
+            <canvas id="unovaRadarChart"></canvas> 
         </div>
         <div class="grid-item">
             <img src="kalosRegion.jpg" alt="Image 6">
             <button>Kalos Region</button>
+            <canvas id="kalosRadarChart"></canvas> 
         </div>
         <div class="grid-item">
             <img src="alolaRegion.jpg" alt="Image 7">
             <button>Alola Region</button>
+            <canvas id="alolaRadarChart"></canvas> 
         </div>
         <div class="grid-item">
             <img src="galarRegion.jpg" alt="Image 8">
             <button>Galar Region</button>
+            <canvas id="galarRadarChart"></canvas> 
         </div>
     </div>
     <h3 class="center"> Modal box method used for map above, referred from w3schools:<br>

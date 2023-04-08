@@ -94,8 +94,8 @@ nav {
   margin-left: 33%;
 }
 
-.img-center {
-  margin-left: 24%;
+.img-left {
+  text-align: left;
 }
 .center {
   display: flex;
@@ -264,4 +264,8 @@ button {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#kantoRadarChart{
+  text-align: right;
 }
