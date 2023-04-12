@@ -94,24 +94,16 @@ nav {
   margin-left: 33%;
 }
 
-.img-left {
-  text-align: left;
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;;
 }
+
 .center {
   display: flex;
   justify-content: center;
-}
-
-/*format the placement of the button for pokeball*/
-.pokeBtn {
-  border: none;
-  background-color: lightblue;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
 }
 
 .regionMap {
@@ -160,10 +152,11 @@ nav {
   padding: 10px;
   background-color: #333;
   color: #fff;
-  border: none;
+  border: purple;
   outline: none;
   cursor: pointer;
 }
+
 
 /* Now let's apply grid for wider viewports. */
 @media screen and (min-width: 40em) {
@@ -194,38 +187,6 @@ nav {
   }
 
 }
-
-/* Hide modals by default
-.modal {
-  display: none;
-} */
-
-/* Style the buttons 
-button {
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}
-
-/* Style the modal content 
-.modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Style the close button 
-.close-btn {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}*/
 
 /* The Modal (background) */
 .modal {
