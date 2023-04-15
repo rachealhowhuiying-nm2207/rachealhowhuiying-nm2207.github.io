@@ -25,6 +25,45 @@ nav {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/*format the sections in the datastory*/
+/*animation source: https://www.sliderrevolution.com/resources/css-animations-on-scroll/ Full Screen Vertical Scroll Snap*/
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+section {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+
+.section2{
+  font-family: 'Pokemon Solid', sans-serif;                                              
+}
+
 /*add styles to the heading in the "Navigation Bar"*/
 .navBar {
   display: flex;
@@ -229,4 +268,9 @@ nav {
 
 #kantoRadarChart{
   text-align: right;
+}
+
+/*style the list of base stats*/
+ul.statsList{
+  list-style-type: circle;
 }

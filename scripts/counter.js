@@ -113,12 +113,12 @@ const charizardData = {
     label: 'Charizard',
     data: [78,84,78,109,85,100],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(255, 159, 64, 0.2)',
+    borderColor: 'rgb(255, 159, 64)',
+    pointBackgroundColor: 'rgb(255, 159, 64)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(255, 159, 64)'
   }]
 };
 new Chart(charizardChart,
@@ -153,12 +153,12 @@ const umbreonData = {
     label: 'Umbreon',
     data: [95,65,110,60,130,65],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(74, 87, 93, 0.2)',
+    borderColor: 'rgb(2, 3, 3)',
+    pointBackgroundColor: 'rgb(74, 87, 93)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(2, 3, 3)'
   }]
 };
 new Chart(umbreonChart,
@@ -193,12 +193,12 @@ const rayquazaData = {
     label: 'Rayquaza',
     data: [105,150,90,150,90,95],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(88, 158, 125, 0.2)',
+    borderColor: 'rgb(88, 158, 125)',
+    pointBackgroundColor: 'rgb(88, 158, 125)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(88, 158, 125)'
   }]
 };
 new Chart(rayquazaChart,
@@ -233,12 +233,12 @@ const lucarioData = {
     label: 'Lucario',
     data: [70,110,70,115,70,90],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(110, 164, 187, 0.2)',
+    borderColor: 'rgb(110, 164, 187)',
+    pointBackgroundColor: 'rgb(110, 164, 187)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(110, 164, 187)'
   }]
 };
 new Chart(lucarioChart,
@@ -273,12 +273,12 @@ const chandelureData = {
     label: 'Chandelure',
     data: [60,55,90,145,90,80],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(117,124,187, 0.2)',
+    borderColor: 'rgb(117,124,187)',
+    pointBackgroundColor: 'rgb(117,124,187)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(117,124,187)'
   }]
 };
 new Chart(chandelureChart,
@@ -313,12 +313,12 @@ const greninjaData = {
     label: 'Greninja',
     data: [72,95,67,103,71,122],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(53, 70, 152, 0.2)',
+    borderColor: 'rgb(53, 70, 152)',
+    pointBackgroundColor: 'rgb(53, 70, 152)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(53, 70, 152)'
   }]
 };
 new Chart(greninjaChart,
@@ -353,12 +353,12 @@ const mimikyuData = {
     label: 'Mimikyu',
     data: [55,90,80,50,105,96],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(215, 207, 172, 0.2)',
+    borderColor: 'rgb(215, 207, 172)',
+    pointBackgroundColor: 'rgb(215, 207, 172)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(215, 207, 172)'
   }]
 };
 new Chart(mimikyuChart,
@@ -393,12 +393,12 @@ const dragapultData = {
     label: 'Dragapult',
     data: [88,120,75,100,75,142],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(92,200,199, 0.2)',
+    borderColor: 'rgb(66,87,101)',
+    pointBackgroundColor: 'rgb(92,200,199)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(66,87,101)'
   }]
 };
 new Chart(dragapultChart,
@@ -418,6 +418,149 @@ new Chart(dragapultChart,
         title: {
             display: true,
             text:"Dragapult's Base Stats",
+            fontFamily: "TrebuchetMS",
+            fontSize: 24,
+            fontColor: 'rgb(100,20,0)',
+        }
+    }
+});
+
+
+//create a polar area chart to compare the number of appearance for each pokemon in anime. 
+//Data source: chatgpt qn - exact number of times ___ appear in the anime
+var animeChart = document.getElementById('polarAreaChart').getContext('2d');
+const animeData = {
+  labels: ['Charizard','Umbreon','Rayquaza','Lucario','Chandelure','Greninina','Mimikyu','Dragapult'],
+  datasets: [{
+    label: 'Number of Appearances in Anime Series/Movies',
+    data: [41,6,5,17,2,35,22,3],
+    fill: true,
+    backgroundColor: [
+      "rgba(255, 159, 64, 0.2)",
+      "rgba(74, 87, 93, 0.2)",
+      "rgba(88, 158, 125 0.2)",
+      "rgba(110, 164, 187, 0.2)",
+      "rgba(117,124,187, 0.2)",
+      "rgba(53, 70, 152, 0.2)",
+      "rgba(215, 207, 172, 0.2)",
+      "rgba(92,200,199, 0.2)",
+    ],
+    borderColor: [
+      "rgba(255, 159, 64, 1)",
+      "rgba(2, 3, 3, 1)'",
+      "rgba(88, 158, 125, 1)",
+      "rgba(110, 164, 187, 1)",
+      "rgba(117,124,187, 1)",
+      "rgba(53, 70, 152, 1)",
+      "rgba(215, 207, 172, 1)",
+      "rgba(66,87,101, 1)",
+    ],
+    borderWidth: 1,
+  }]
+};
+new Chart(animeChart,
+{
+    type: "polarArea",
+    data: animeData,
+    options: { 
+      scale: {
+        ticks: {
+          beginAtZero: true,
+          max: 150}
+        },
+        maintainAspectRatio: false,
+        legend: {
+            display: false,
+        },
+        title: {
+            display: true,
+            text:"Number of Appearances in Anime Series/Movies",
+            fontFamily: "TrebuchetMS",
+            fontSize: 24,
+            fontColor: 'rgb(100,20,0)',
+        }
+    }
+});
+
+
+//Create multi-bar chart to compare stats of top Pokemon from different regions.
+//referred from week 8 classwork
+var barChart = document.getElementById('statsBarChart').getContext('2d')
+const statsType = ["HP","Attack","Defense","Sp. Atk ","Sp. Def ","Speed"];
+
+const statsData ={
+  labels: statsType,
+  datasets: [
+    {
+      label: "Charizard",
+      data: [78,84,78,109,85,100],
+      borderWidth: 3,
+      backgroundColor: rgba(255, 159, 64, 0.2),
+      borderColor: rgb(255, 159, 64),
+    },
+    {
+      label: "Umbreon",
+      data: [95,65,110,60,130,65],
+      borderWidth: 3,
+      backgroundColor: rgba(74, 87, 93, 0.2),
+      borderColor: rgb(2, 3, 3),
+    },
+    {
+      label: "Rayquaza",
+      data: [105,150,90,150,90,95],
+      borderWidth: 3,
+      backgroundColor: rgba(88, 158, 125, 0.2),
+      borderColor: rgb(88, 158, 125),
+    },
+    {
+      label: "Lucario",
+      data: [70,110,70,115,70,90],
+      borderWidth: 3,
+      backgroundColor: rgba(110, 164, 187, 0.2),
+      borderColor: rgb(110, 164, 187),
+    },
+    {
+      label: "Chandelure",
+      data: [60,55,90,145,90,80],
+      borderWidth: 3,
+      backgroundColor: rgba(117,124,187, 0.2),
+      borderColor: rgb(117,124,187),
+    },
+    {
+      label: "Greninja",
+      data: [72,95,67,103,71,122],
+      borderWidth: 3,
+      backgroundColor: rgba(53, 70, 152, 0.2),
+      borderColor: rgb(53, 70, 152),
+    },
+    {
+      label: "Mimikyu",
+      data: [55,90,80,50,105,96],
+      borderWidth: 3,
+      backgroundColor: rgba(215, 207, 172, 0.2),
+      borderColor: rgb(215, 207, 172),
+    },
+    {
+      label: "Dragapult",
+      data: [88,120,75,100,75,142],
+      borderWidth: 3,
+      backgroundColor: rgba(92,200,199, 0.2),
+      borderColor: rgb(66,87,101),
+    },
+  ]
+}
+new Chart(barChart,
+{
+    type: "bar",
+    data: statsData,
+    options: { 
+        maintainAspectRatio: false,
+        legend: {
+            display: true
+        },
+        title: {
+            display: true,
+            text: ['Base stats For Each Pokemon'],
             fontFamily: "TrebuchetMS",
             fontSize: 24,
             fontColor: 'rgb(100,20,0)',

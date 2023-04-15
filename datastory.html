@@ -6,6 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="scripts/counter.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"> <!--for section 2 heading-->
 </head>
 
 <body>
@@ -21,11 +22,32 @@
         </ul>
     </nav>
 
-    <div class="introText">What is the <b> 'secret recipe"</b> to making a popular Pokemon?</div>
+<section id="section1">Hi there! Togepi is welcoming you on the left!</section>
+<img id="image" class="pokeball" src="pokeball.png">
+<br />
 
-    <img id="image" class="pokeball" src="pokeball.png">
-    <br />
+<section id="section2"><style>
+    @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+    </style>POKEMON<br>Gotta Catch Em' All!</section>
 
+<section id ="section3"><h1>Some background about Pokemon...</h1></section>
+<p>The Pokemon world consist of over a thousand different Pokemon and they are spread out across the regions.<br>
+ Many of these Pokemon are created based on real-life creatures, hence giving players a sense of relatability<br> 
+ to the real world. With each unique characteristics and designs of each Pokemon, there is a tendency for <br>
+ some to be more favored than the others.</p>
+
+ <p>Hence, through this data story, there will be comparisons of Pokemon using their data and meaningful<b>
+    conclusions can be drawn to answer the following question...</p>
+
+<section id="section4">
+<!--<div class="introText">What is the <b> 'secret recipe"</b> to making a popular Pokemon?</div>-->
+<h1>What is the <b> 'secret recipe"</b> to making a popular Pokemon?</h1>
+</section>
+
+<section id="section5">Top Pokemon as of 2020</section>
+<p>Using <a href="https://pokemon2020.pokemon.com/en-us/"> vote results from 2020,</a>
+    we will first find out the most popular pokemon from each region! <br>
+    Click on the button in each region below to find out more!</p>
 
     <!--Display of 8 regions with buttons below respectively, format referred from (ChatGPT, personal communication, February 16, 2023)
     Qn asked on ChatGPT: html 3 by 3 grid with 8 images with a button below each images, creating modal box-->
@@ -33,7 +55,7 @@
 
     <!--Each image has a button and a modal box.-->
         <div class="grid-item">
-            <img src="kantoRegion.jpg" alt="Kanto Region">
+            <img src="kantoRegion.jpg" alt="Kanto Region"> <!--image source: https://www.pokepedia.fr/Sinnoh-->
             <button id="modal1-btn">Kanto Region</button>
         </div>
         <div id="modal1" class="modal">
@@ -46,7 +68,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="johtoRegion.jpg" alt="Johto Region">
+            <img src="johtoRegion.jpg" alt="Johto Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Johto-->
             <button id="modal2-btn">Johto Region</button>
         </div>
         <div id="modal2" class="modal">
@@ -59,7 +81,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="hoennRegion.jpg" alt="Hoenn Region">
+            <img src="hoennRegion.jpg" alt="Hoenn Region"> <!--image source: https://poke-pikachu.fandom.com/wiki/Hoenn-->
             <button id="modal3-btn">Hoenn Region</button>
         </div>
         <div id="modal3" class="modal">
@@ -72,7 +94,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="sinnohRegion.jpg" alt="Sinnoh Region">
+            <img src="sinnohRegion.jpg" alt="Sinnoh Region"> <!-- image source: https://www.pokepedia.fr/Sinnoh-->
             <button id="modal4-btn">Sinnoh Region</button>
         </div>
         <div id="modal4" class="modal">
@@ -85,7 +107,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="unovaRegion.jpg" alt="Unova Region">
+            <img src="unovaRegion.jpg" alt="Unova Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Unova-->
             <button id="modal5-btn">Unova Region</button>
         </div>
         <div id="modal5" class="modal">
@@ -98,7 +120,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="kalosRegion.jpg" alt="Kalos Region">
+            <img src="kalosRegion.jpg" alt="Kalos Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Kalos-->
             <button id="modal6-btn">Kalos Region</button>
         </div>
         <div id="modal6" class="modal">
@@ -111,7 +133,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="alolaRegion.jpg" alt="Alola Region">
+            <img src="alolaRegion.jpg" alt="Alola Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Alola-->
             <button id="modal7-btn">Alola Region</button>
         </div>
         <div id="modal7" class="modal">
@@ -124,7 +146,7 @@
         </div>
 
         <div class="grid-item">
-            <img src="galarRegion.jpg" alt="Galar Region">
+            <img src="galarRegion.jpg" alt="Galar Region"> <!--image source: https://bulbapedia.bulbagarden.net/wiki/Galar-->
             <button id="modal8-btn">Galar Region</button>
         </div>
         <div id="modal8" class="modal">
@@ -135,13 +157,72 @@
                 <canvas id="galarRadarChart"></canvas>
             </div>
         </div>
-    
-    <h3 class="center"> Modal box method used for map above, referred from w3schools:<br>
-        This image of all regions will be cropped into individual image of each region. Each region will then be taking
-        a modal box. When a specific region in the map is clicked, the user will be shown the content in the respective
-        modal box. The image of the most popular pokemon in that region with a radar chart to show its stats can be
-        seen from the modal box. At the same time, the theme song for the clicked region will be played on click.</h3>
 
+        <div class="grid-item">
+            <img src="paldeaRegion.jpg" alt="Paldea Region"> <!--image source: https://bulbapedia.bulbagarden.net/wiki/File:Paldea_artwork.png-->
+            <button id="modal9-btn">Paldea Region</button>
+        </div>
+    </div>
+    
+<section id="section7"> Using the top pokemon from each region, we can derive some factors that contribute to a Pokemon's popularity!</section>
+
+<!--Factor 1: Base stats-->
+<section id="section8"><h1>1. The Base Stats of the Pokemon</h1></section>
+<p>Every Pokemon has their own base stats for each attribute: 1- 255.</br>
+According to <a href="https://marriland.com/glossary/base-stats/">Marriland (2021):</a>
+<ul class="statsList">
+    <li>Very Poor (Less Than 40)</li>
+    <li>Poor (40 to 65)</li>
+    <li>Average (65 to 80)</li>
+    <li>Decent (80 to 90)</li>
+    <li>Good (90 to 110)</li>
+    <li>Very Good (110 to 130)</li>
+    <li>Excellent (130 or Higher)</li>
+</ul></p>
+
+<h2 align="left">
+With that in mind, we can compare the base stats of each popular Pokemon using the chart on the right:</h2>
+<canvas id="statsBarChart"></canvas>
+
+<p>The comparative bar chart help us visualise the strength and weakness of each Pokemon and more importantly,<br>
+    allow for comparisons within the same category, eg Rayquaza scoring highest in 'Attack' and 'Sp. Atk'.<br>
+    <br>
+    As a whole, these popular Pokemon generally share the same quality of having commendable base stats;<br>
+    <b>they score more than 100 in at least 1 category!</b>
+</p>
+
+<!--Factor 2: Anime appearances-->
+<section id="section9"><h1>2. Appearances in Anime Series/Movies as of Sep 2021:</h1></section>
+<canvas id="polarAreaChart"></canvas>
+
+<p>From the statistics above, there are a few standouts: <span style="color: orangered">Charizard</span>, <span style="color: blue">Greninja</span> and <span style="color: bisque">Mimikyu</span>.</br>
+And these 3 portay unique personalities and storylines that appeal to the audience immensely. 
+</p>
+
+<h2>1. Charizard</h2>
+<img src="charizardAnime.gif" text-align="left"></br> <!--gif source: https://knowyourmeme.com/photos/1158600-pokemon-->
+<p>Charizard is one of Ash's iconic Pokemon who has shown trenmendous growth since its days as a Charmander.</br>
+Its storyline of emerging from a stubborn, defiant Pokemon to Ash's most reliable ally, is one of the fans' favourite plots in the anime.</br>
+As the Pokemon with the most number of appearances, it may explain why its popularity in the Sinnoh Region.
+</p>
+
+<h2>2. Greninja</h2>
+<img src="greninjaAnime.gif" text-align="left"></br> <!--gif source: https://tenor.com/view/pokemon-ash-ashgreninja-sync-anime-gif-15987773-->
+<p>Similar to Charizard, Greninjia is also one of Ash's most loyal Pokemon who has played important role in Ash's X & Y Series.</br>
+The unique part of its storyline is the formidable bond between Greninja and Ash, where they can sync each others' thoughts and movements.</br>
+Hence, with Greninjia's prominent presence in the Anime, it has been well-received by many Pokemon fans.
+</p>
+
+<h2>3. Mimikyu</h2>
+<img src="mimikyuAnime.gif" text-align="left"></br> <!--gif source: https://furyokus.tumblr.com/post/156467803361/meowth-almost-died-by-looking-at-mimikyus-real-->
+<p>Mimikyu is widely known as a mysterious Pokemon that wears a rag to mimic the appearance of a Pikachu.</br>
+It does so to hide its true form, which is terrifying to anyone who sees it.</br>
+In the anime, the memorable scene of how Mimikyu becomes dejected after seeing its own reflection in the water had many fans feeling emphathetic.
+</p>
+
+<!--Factor 2: Design-->
+<section id="section10"><h1>3. Physical Design of the Pokemon:</h1></section>
+<!--https://codemyui.com/image-slide-scroll-animation/-->
 
 </body>
 
