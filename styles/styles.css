@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 /*style the navigation bar, reference source is: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar*/
 * {
   margin: 0px;
@@ -5,29 +6,75 @@
   box-sizing: border-box;
 }
 
-/*set some formatting for the placement of the introductory text efor each html links from the navigation bar*/
+/*format the intro text in the homepage*/
 .introText {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 10px;
+  /* 
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
   /*ensure there is space around the text to make it stand out*/
 }
 
 /*set a general formating for the entire navigation bar*/
+
 nav {
+  z-index: 9999;
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* min-height: 10vh; */
+  min-height: 8vh;
   background-color: rgb(139, 136, 235);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  margin-bottom: 2%;
 }
+
+.heading {
+  color: white;
+  text-decoration-line: overline;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: rgb(245, 211, 236);
+}
+
+.nav-links li a.active {
+  background-color:rgb(128, 55, 230);
+}
+
+
 
 /*format the sections in the datastory*/
 /*animation source: https://www.sliderrevolution.com/resources/css-animations-on-scroll/ Full Screen Vertical Scroll Snap*/
-html, body, section {
+html,
+body,
+section {
   block-size: 100%;
 }
 
@@ -38,30 +85,41 @@ html {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 section:nth-of-type(even) {
-  color: white;
-  background: black;
+  color: rgb(119, 44, 44);
+  background: rgb(213, 185, 185);
 }
 
 section:nth-of-type(odd) {
-  color: black;
+  color: rgb(119, 44, 44);
   background: white;
 }
 
-section {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  font-size: 4rem;
+body {
+  scroll-padding-top: 75px;
+}
+.chart-wrapper {
+  height: 600px;
+  width: 800px;
+  padding-left: 3%;
 }
 
-.section2{
-  font-family: 'Pokemon Solid', sans-serif;                                              
+
+* { 
+  margin : 0;
+  padding: 0;
+  box-sizing : border-box;
+}
+
+/*font used: https://www.cdnfonts.com/pokemon-solid.font*/
+section {
+  font-family: 'Pokemon Solid', sans-serif;
 }
 
 /*add styles to the heading in the "Navigation Bar"*/
@@ -75,47 +133,6 @@ section {
   font-display: swap;
 }
 
-/*format the links in navigation bar*/
-.navLinks {
-  display: flex;
-  justify-content: space-around;
-  width: 30%
-}
-
-/*format the sticky navBar when user is scrolling*/
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/*add top padding to the navBar*/
-.sticky+.navlinks {
-  padding-top: 50px;
-}
-
-/*set list-style to none to prevent list formatting*/
-.navLinks li {
-  list-style: none;
-}
-
-.navLinks a {
-  color: lightgrey;
-  font-size: medium;
-  font-weight: bold;
-  font-display: swap;
-  padding: 14px 16px;
-}
-
-/*add color for each link when hovering above it*/
-.navLinks a:hover:not(active) {
-  background-color: rgb(245, 211, 236);
-}
-
-/*add color for the lunk that is chosen*/
-.navLinks li a.active {
-  background-color: rgb(128, 55, 230);
-}
 
 /*format the boxForContent, reference: https://linuxhint.com/how-to-make-html-container-box-in-html/*/
 .boxForContent {
@@ -128,16 +145,22 @@ section {
   border: rgb(139, 136, 235) 5px solid;
 }
 
+/*format the togepi image*/
 .pokeball {
-  width: 35%;
-  margin-left: 33%;
+  height: auto; 
+  width: auto; 
+  max-width: 500px; 
+  max-height: 500px;
+  /* width: 35%;*/
+  margin-left: 15%;
 }
 
 .img-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;;
+  width: 50%;
+  ;
 }
 
 .center {
@@ -170,7 +193,7 @@ section {
 
 .grid-item {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-bottom: 100%;
 }
 
@@ -189,7 +212,7 @@ section {
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: #333;
+  background-color: rgb(128, 55, 230);
   color: #fff;
   border: purple;
   outline: none;
@@ -229,17 +252,26 @@ section {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -266,11 +298,91 @@ section {
   cursor: pointer;
 }
 
-#kantoRadarChart{
+#kantoRadarChart {
   text-align: right;
 }
 
 /*style the list of base stats*/
-ul.statsList{
+ul.statsList {
   list-style-type: circle;
+  font-size: 18px;
+}
+
+/*style the images for 
+/*referred from: https://blog.hubspot.com/website/css-card-animation*/
+.design-card {
+  position : relative;
+  width : 1500px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px;  
+}
+
+.design-card .card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  font-family : "Poppins", sans-serif;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.design-card .card:hover {
+  height : 420px;    
+}
+
+
+.design-card .card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.design-card .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.design-card .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.design-card .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+}
+
+/*style the highlighted words*/
+/*referred from: https://alvarotrigo.com/blog/css-highlight-text/*/
+.highlight-purple {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(128, 55, 230, 0.2),
+    rgba(128, 55, 230, 0.7) 95%,
+    rgba(128, 55, 230, 0.1)
+  );
 }

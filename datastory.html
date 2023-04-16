@@ -10,50 +10,62 @@
 </head>
 
 <body>
-    <nav style="min-height: 10vh;">
-        <div class="navBar">
-            <h3>Navigation Bar</h3>
-        </div> <!--This is the navigation bar to toggle between the homepage and actual datastory-->
-        <ul class="navLinks"> <!--This class of "navLinks" will be styled in styles.css-->
-            <!--Make the landing page be index.html aka the the user will first start from the homepage.-->
+    <nav>
+        <div class="heading">
+            <h4>FINAL PROJECT</h4>
+        </div>
+        <ul class="nav-links">
             <li><a href="index.html">Homepage</a></li>
-            <!--Homepage will contain storybord and brief outline of my datastory-->
             <li><a class="active" href="datastory.html">DataStory</a></li>
         </ul>
     </nav>
 
-<section id="section1">Hi there! Togepi is welcoming you on the left!</section>
-<img id="image" class="pokeball" src="pokeball.png">
-<br />
 
-<section id="section2"><style>
-    @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-    </style>POKEMON<br>Gotta Catch Em' All!</section>
+    <section style="margin: 0 10% 0 10%; font-size: 25px">
+        <h1>Hi there! Togepi is welcoming you on right!</h1>
+        <img id="image" class="pokeball" src="pokeball.png" >
+    </section>
+    <br />
+    <section style="font-size: 25px; padding: 0 10% 0 10%; border-style: solid;">
+        <img src="pokemonTagLine.png" style="width: 600px; height:350px; margin-right: 10%;">
+        <!--image source: https://images.squarespace-cdn.com/content/v1/51d3a8f6e4b085686832d41d/1379381612026-4Q7SD886Q6JDDMPBGKA6/Pok%C3%87mon+Gotta+Catch+%27Em+All_Logo_EN_800px_150dpi.png-->
+        <img src="ashImage.png" style="width: 400px; height: 500px;"><!--image source: https://www.pngmart.com/files/2/Pokemon-Ash-PNG-HD.png-->
+    </section>
 
-<section id ="section3"><h1>Some background about Pokemon...</h1></section>
-<p>The Pokemon world consist of over a thousand different Pokemon and they are spread out across the regions.<br>
- Many of these Pokemon are created based on real-life creatures, hence giving players a sense of relatability<br> 
- to the real world. With each unique characteristics and designs of each Pokemon, there is a tendency for <br>
- some to be more favored than the others.</p>
+    <section style="font-size: 45px;">
+        <h1>Some background about Pokemon...</h1>
+    </section>
+    <section style="padding: 0 10% 0 10%; border-style: solid; font-size: 25px;">
+        <p style="border-style: solid;padding:1%; background: peachpuff;text-align:center">The Pokemon world consist of over a thousand
+            different Pokemon and they are spread out across the regions.
+            Many of these Pokemon are created based on real-life creatures, hence giving players a sense of relatability
+            to the real world. <u>With each unique characteristics and designs of each Pokemon, there is a tendency for
+            some to be more favored than the others.</u>
+            <br>
+            <br>
 
- <p>Hence, through this data story, there will be comparisons of Pokemon using their data and meaningful<b>
-    conclusions can be drawn to answer the following question...</p>
+            Hence, through this data story, there will be comparisons of Pokemon using their data and meaningful
+            conclusions can be drawn to answer the following question...
+        </p>
+    </section>
 
-<section id="section4">
-<!--<div class="introText">What is the <b> 'secret recipe"</b> to making a popular Pokemon?</div>-->
-<h1>What is the <b> 'secret recipe"</b> to making a popular Pokemon?</h1>
-</section>
 
-<section id="section5">Top Pokemon as of 2020</section>
-<p>Using <a href="https://pokemon2020.pokemon.com/en-us/"> vote results from 2020,</a>
-    we will first find out the most popular pokemon from each region! <br>
-    Click on the button in each region below to find out more!</p>
+    <!--<div class="introText">What is the <b> 'secret recipe"</b> to making a popular Pokemon?</div>-->
+    <section style="font-size: 45px; text-align:center">
+        <h1>What is the <b> 'secret recipe"</b> to making a popular Pokemon?</h1>
+    </section>
+
+    <section style="font-size: 25px;border-style: solid">
+        <p style="text-align:center">Using <a href="https://pokemon2020.pokemon.com/en-us/"> vote results from 2020,</a>
+            we will first find out the most popular pokemon from each region. <br>
+            <span class="highlight-purple">Click on the purple buttons in each region below to find out more!</span></p>
+    </section>
 
     <!--Display of 8 regions with buttons below respectively, format referred from (ChatGPT, personal communication, February 16, 2023)
     Qn asked on ChatGPT: html 3 by 3 grid with 8 images with a button below each images, creating modal box-->
-    <div class="grid-container">
+    <section class="grid-container">
 
-    <!--Each image has a button and a modal box.-->
+        <!--Each image has a button and a modal box.-->
         <div class="grid-item">
             <img src="kantoRegion.jpg" alt="Kanto Region"> <!--image source: https://www.pokepedia.fr/Sinnoh-->
             <button id="modal1-btn">Kanto Region</button>
@@ -61,38 +73,46 @@
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Kanto is... Charizard! </br>The chart beside displays the base stats of a Charizard.</h1>
-                <img class="img-center" src="charizardGif.gif"> <!--gif source: https://www.gifcen.com/charizard-gif-14/-->
+                <h1>Top Pokemon in Kanto is... Charizard! </br>The chart below displays the base stats of a Charizard.
+                </h1>
+                <img class="img-center" src="charizardGif.gif">
+                <!--gif source: https://www.gifcen.com/charizard-gif-14/-->
                 <canvas id="kantoRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="johtoRegion.jpg" alt="Johto Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Johto-->
+            <img src="johtoRegion.jpg" alt="Johto Region">
+            <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Johto-->
             <button id="modal2-btn">Johto Region</button>
         </div>
         <div id="modal2" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Johto is... Umbreon! </br>The chart beside displays the base stats of an Umbreon.</h1>
+                <h1>Top Pokemon in Johto is... Umbreon! </br>The chart below displays the base stats of an Umbreon.
+                </h1>
                 <img class="img-center" src="umbreonGif.gif"> <!--gif source: https://gifer.com/en/66PM-->
                 <canvas id="johtoRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="hoennRegion.jpg" alt="Hoenn Region"> <!--image source: https://poke-pikachu.fandom.com/wiki/Hoenn-->
+            <img src="hoennRegion.jpg" alt="Hoenn Region">
+            <!--image source: https://poke-pikachu.fandom.com/wiki/Hoenn-->
             <button id="modal3-btn">Hoenn Region</button>
         </div>
         <div id="modal3" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Hoenn is... Rayquaza! </br>The chart beside displays the base stats of a Rayquaza.</h1>
-                <img class="img-center" src="rayquazaGif.gif"> <!-- gif source: https://aminoapps.com/c/pokemon/page/blog/gif-of-the-day-rayquaza/rghe_u0LaDdz3G424orVeb86VGYv0B-->
+                <h1>Top Pokemon in Hoenn is... Rayquaza! </br>The chart below displays the base stats of a Rayquaza.
+                </h1>
+                <img class="img-center" src="rayquazaGif.gif">
+                <!-- gif source: https://aminoapps.com/c/pokemon/page/blog/gif-of-the-day-rayquaza/rghe_u0LaDdz3G424orVeb86VGYv0B-->
                 <canvas id="hoennRadarChart"></canvas>
             </div>
         </div>
-
+    </section>
+    <section class="grid-container" style="border-style: solid">
         <div class="grid-item">
             <img src="sinnohRegion.jpg" alt="Sinnoh Region"> <!-- image source: https://www.pokepedia.fr/Sinnoh-->
             <button id="modal4-btn">Sinnoh Region</button>
@@ -100,130 +120,323 @@
         <div id="modal4" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Sinnoh is... Lucario! </br>The chart beside displays the base stats of a Lucario.</h1>
-                <img class="img-center" src="lucarioGIf.gif"> <!-- gif source: https://tenor.com/en-SG/search/lucario-gifs-->
+                <h1>Top Pokemon in Sinnoh is... Lucario! </br>The chart below displays the base stats of a Lucario.
+                </h1>
+                <img class="img-center" src="lucarioGIf.gif">
+                <!-- gif source: https://tenor.com/en-SG/search/lucario-gifs-->
                 <canvas id="sinnohRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="unovaRegion.jpg" alt="Unova Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Unova-->
+            <img src="unovaRegion.png" alt="Unova Region">
+            <!-- image source: https://archives.bulbagarden.net/media/upload/f/fc/Unova_B2W2_alt.png-->
             <button id="modal5-btn">Unova Region</button>
         </div>
         <div id="modal5" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Unova is... Chandelure! </br>The chart beside displays the base stats of a Chandelure.</h1>
-                <img class="img-center" src="chandelureGif.gif"> <!--https://www.newgrounds.com/art/view/scribbasock/day-10-excited-chandelure-->
+                <h1>Top Pokemon in Unova is... Chandelure! </br>The chart below displays the base stats of a
+                    Chandelure.</h1>
+                <img class="img-center" src="chandelureGif.gif">
+                <!--https://www.newgrounds.com/art/view/scribbasock/day-10-excited-chandelure-->
                 <canvas id="unovaRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="kalosRegion.jpg" alt="Kalos Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Kalos-->
+            <img src="kalosRegion.jpg" alt="Kalos Region">
+            <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Kalos-->
             <button id="modal6-btn">Kalos Region</button>
         </div>
         <div id="modal6" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Kalos is... Greninja! </br>The chart beside displays the base stats of a Greninja.</h1>
+                <h1>Top Pokemon in Kalos is... Greninja! </br>The chart below displays the base stats of a Greninja.
+                </h1>
                 <img class="img-center" src="greninjaGif.gif"> <!--https://knowyourmeme.com/photos/1130140-greninja-->
                 <canvas id="kalosRadarChart"></canvas>
             </div>
         </div>
-
+    </section>
+    <section class="grid-container">
         <div class="grid-item">
-            <img src="alolaRegion.jpg" alt="Alola Region"> <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Alola-->
+            <img src="alolaRegion.jpg" alt="Alola Region">
+            <!-- image source: https://bulbapedia.bulbagarden.net/wiki/Alola-->
             <button id="modal7-btn">Alola Region</button>
         </div>
         <div id="modal7" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Kalos is... Mimikyu! </br>The chart beside displays the base stats of a Mimikyu.</h1>
+                <h1>Top Pokemon in Kalos is... Mimikyu! </br>The chart below displays the base stats of a Mimikyu.</h1>
                 <img class="img-center" src="mimikyuGif.gif"> <!--https://knowyourmeme.com/photos/1370551-mimikyu-->
                 <canvas id="alolaRadarChart"></canvas>
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="galarRegion.jpg" alt="Galar Region"> <!--image source: https://bulbapedia.bulbagarden.net/wiki/Galar-->
+            <img src="galarRegion.jpg" alt="Galar Region">
+            <!--image source: https://bulbapedia.bulbagarden.net/wiki/Galar-->
             <button id="modal8-btn">Galar Region</button>
         </div>
         <div id="modal8" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Top Pokemon in Galar is... Dragapult! </br>The chart beside displays the base stats of a Dragapult.</h1>
-                <img class="img-center" src="dragapultGif.gif"> <!--https://tenor.com/en-SG/view/dragapult-pok%C3%A9mon-pokemon-smile-gif-24549010-->
+                <h1>Top Pokemon in Galar is... Dragapult! </br>The chart below displays the base stats of a Dragapult.
+                </h1>
+                <img class="img-center" src="dragapultGif.gif">
+                <!--https://tenor.com/en-SG/view/dragapult-pok%C3%A9mon-pokemon-smile-gif-24549010-->
                 <canvas id="galarRadarChart"></canvas>
+
             </div>
         </div>
 
         <div class="grid-item">
-            <img src="paldeaRegion.jpg" alt="Paldea Region"> <!--image source: https://bulbapedia.bulbagarden.net/wiki/File:Paldea_artwork.png-->
+            <img src="paldeaRegion.jpg" alt="Paldea Region">
+            <!--image source: https://bulbapedia.bulbagarden.net/wiki/File:Paldea_artwork.png-->
             <button id="modal9-btn">Paldea Region</button>
         </div>
-    </div>
-    
-<section id="section7"> Using the top pokemon from each region, we can derive some factors that contribute to a Pokemon's popularity!</section>
+    </section>
 
-<!--Factor 1: Base stats-->
-<section id="section8"><h1>1. The Base Stats of the Pokemon</h1></section>
-<p>Every Pokemon has their own base stats for each attribute: 1- 255.</br>
-According to <a href="https://marriland.com/glossary/base-stats/">Marriland (2021):</a>
-<ul class="statsList">
-    <li>Very Poor (Less Than 40)</li>
-    <li>Poor (40 to 65)</li>
-    <li>Average (65 to 80)</li>
-    <li>Decent (80 to 90)</li>
-    <li>Good (90 to 110)</li>
-    <li>Very Good (110 to 130)</li>
-    <li>Excellent (130 or Higher)</li>
-</ul></p>
+    <section style="font-size: 45px; border-style: solid">
+        <p style="text-align:center">Using the top pokemon from each region, we can derive some <u>factors</u> that contribute to a Pokemon's popularity!
+        </p>
+    </section>
 
-<h2 align="left">
-With that in mind, we can compare the base stats of each popular Pokemon using the chart on the right:</h2>
-<canvas id="statsBarChart"></canvas>
+    <!--Factor 1: Base stats-->
+    <section style="font-size: 45px;">
+        <h2>1. The Base Stats of the Pokemon</h2>
+    </section>
+    <section style="padding: 0 5% 0 5%; border-style: solid">
+        <p style="font-size: 25px;">Every Pokemon has their own base stats for each attribute: 1- 255.
+            According to <a href="https://marriland.com/glossary/base-stats/">Marriland (2021),</a> the stats are considered:</p><br>
+        <p><ul class="statsList">
+            <li>Very Poor (Less Than 40)</li>
+            <li>Poor (40 to 65) </li>
+            <li>Average (65 to 80)</li>
+            <li>Decent (80 to 90)</li>
+            <li>Good (90 to 110)</li>
+            <li>Very Good (110 to 130)</li>
+            <li>Excellent (130 or Higher) </li>
+        </ul></p>
+    </section>
 
-<p>The comparative bar chart help us visualise the strength and weakness of each Pokemon and more importantly,<br>
-    allow for comparisons within the same category, eg Rayquaza scoring highest in 'Attack' and 'Sp. Atk'.<br>
-    <br>
-    As a whole, these popular Pokemon generally share the same quality of having commendable base stats;<br>
-    <b>they score more than 100 in at least 1 category!</b>
-</p>
 
-<!--Factor 2: Anime appearances-->
-<section id="section9"><h1>2. Appearances in Anime Series/Movies as of Sep 2021:</h1></section>
-<canvas id="polarAreaChart"></canvas>
+    <section style="padding:0 5%; font-size: 18px;">
+        <h2>With that in mind, we can compare the <br>base stats of each popular Pokemon using the
+            chart on the right:</h2>
 
-<p>From the statistics above, there are a few standouts: <span style="color: orangered">Charizard</span>, <span style="color: blue">Greninja</span> and <span style="color: bisque">Mimikyu</span>.</br>
-And these 3 portay unique personalities and storylines that appeal to the audience immensely. 
-</p>
+        <div class="chart-wrapper">
+            <canvas id="statsBarChart"></canvas>
+        </div>
+    </section>
 
-<h2>1. Charizard</h2>
-<img src="charizardAnime.gif" text-align="left"></br> <!--gif source: https://knowyourmeme.com/photos/1158600-pokemon-->
-<p>Charizard is one of Ash's iconic Pokemon who has shown trenmendous growth since its days as a Charmander.</br>
-Its storyline of emerging from a stubborn, defiant Pokemon to Ash's most reliable ally, is one of the fans' favourite plots in the anime.</br>
-As the Pokemon with the most number of appearances, it may explain why its popularity in the Sinnoh Region.
-</p>
 
-<h2>2. Greninja</h2>
-<img src="greninjaAnime.gif" text-align="left"></br> <!--gif source: https://tenor.com/view/pokemon-ash-ashgreninja-sync-anime-gif-15987773-->
-<p>Similar to Charizard, Greninjia is also one of Ash's most loyal Pokemon who has played important role in Ash's X & Y Series.</br>
-The unique part of its storyline is the formidable bond between Greninja and Ash, where they can sync each others' thoughts and movements.</br>
-Hence, with Greninjia's prominent presence in the Anime, it has been well-received by many Pokemon fans.
-</p>
+    <section style="border-style: solid; padding: 0 5%; font-size: 25px;">
+        <p style="text-align: center;">The comparative bar charts help us visualise the strength and weakness of each Pokemon.
+            More importantly, comparisons within a certain stat category can be made. For eg:<br> <span style="color: rgb(88, 158, 125)"> Rayquaza scoring highest in 'Attack' and 'Sp. Atk'.</span>
+            <br><br>
+            As a whole, these popular Pokemon generally share the same quality of having commendable base stats;<br>
+            <span class="highlight-purple">they score more than 100 in at least 1 category!</span>
+        </p>
+    </section>
 
-<h2>3. Mimikyu</h2>
-<img src="mimikyuAnime.gif" text-align="left"></br> <!--gif source: https://furyokus.tumblr.com/post/156467803361/meowth-almost-died-by-looking-at-mimikyus-real-->
-<p>Mimikyu is widely known as a mysterious Pokemon that wears a rag to mimic the appearance of a Pikachu.</br>
-It does so to hide its true form, which is terrifying to anyone who sees it.</br>
-In the anime, the memorable scene of how Mimikyu becomes dejected after seeing its own reflection in the water had many fans feeling emphathetic.
-</p>
+    <!--Factor 2: Anime appearances-->
+    <section style="font-size: 45px">
+        <h2 style="text-align: center; margin: 5% 15%;">2. Appearances in Anime Series/Movies as of Sep 2021</h2>
+        </section>
+        <section style="border-style:solid">
+        <div class="chart-wrapper">
+            <canvas id="polarAreaChart"></canvas>
+        </div>
+    </section>
 
-<!--Factor 2: Design-->
-<section id="section10"><h1>3. Physical Design of the Pokemon:</h1></section>
-<!--https://codemyui.com/image-slide-scroll-animation/-->
+    <section style="font-size:25px; padding:0 5%;">
+    <p style="text-align:center">From the statistics above, there are a few standouts: <span style="color: rgb(255, 159, 64); font-size: 35px;">Charizard</span>, <span
+            style="color: rgb(53, 70, 152);font-size: 35px;">Greninja</span> and <span style="color: rgb(215, 207, 172);font-size: 35px;">Mimikyu</span>.</br>
+            <br>
+        And these 3 portay unique personalities and storylines that appeal to the audience immensely.<br>
+        It can be inferred that <span class=highlight-purple>Pokemon fans care deeply about back stories</span> and tend to find those with more elaborated storylines much more appealing!
+    </p>
+</section>
 
+<section style="text-align: center; font-size: 25px; border-style:solid; ">
+    <p style="margin:0 15px; text-align:center"><span style="color: rgb(255, 159, 64);font-size: 35px">1. Charizard</span><br>
+        Charizard is one of Ash's iconic Pokemon who has shown trenmendous growth since its days as a Charmander.</br>
+        Its storyline of emerging from a stubborn, defiant Pokemon to Ash's most reliable ally, is one of the fans'
+        favourite plots in the anime.</br>
+        As the Pokemon with the most number of appearances, its popularity can be more expected.
+        <img src="charizardAnime.gif" style="margin:20px 10px"></br>
+            <!--gif source: https://knowyourmeme.com/photos/1158600-pokemon-->
+    </p>
+</section>
+
+<section style="text-align: center; font-size: 25px; padding:0 2%">
+
+    <p><span style="color: rgb(53, 70, 152);font-size: 35px; ">2. Greninja</span><br>
+        Similar to Charizard, Greninjia is also one of Ash's most loyal Pokemon who has played important role in Ash's X
+        & Y Series.</br>
+        The unique part of its storyline is the formidable bond between Greninja and Ash, where they can sync each
+        others' thoughts and movements through telepathy.</br>
+        Hence, with Greninjia's prominent presence in the Anime, it has been well-received by many Pokemon fans.<br>
+        <img src="greninjaAnime.gif" text-align="left"></br>
+        <!--gif source: https://tenor.com/view/pokemon-ash-ashgreninja-sync-anime-gif-15987773-->
+    </p>
+</section>
+
+<section style="text-align: center; font-size: 25px; padding:0 2%; border-style: solid;">
+    <p><span style="color: rgb(215, 207, 172);font-size: 35px;">3. Mimikyu</span><br>
+        Mimikyu is widely known as a mysterious Pokemon that wears a rag to mimic the appearance of a Pikachu.</br>
+        It does so to hide its true form, which is terrifying to anyone who sees it.</br>
+        In the anime, the memorable scene of how Mimikyu becomes dejected after seeing its own reflection in the water
+        had many fans feeling emphathetic.<br>
+        <img src="mimikyuAnime.gif" text-align="left"></br>
+    <!--gif source: https://furyokus.tumblr.com/post/156467803361/meowth-almost-died-by-looking-at-mimikyus-real-->
+    </p>
+</section>
+
+    <!--Factor 2: Design-->
+    <section style="font-size: 45px;">
+        <h2>3. Physical Design of the Pokemon</h2>
+        <br>
+        </section>
+
+        <section style="text-align: center; padding:0 2%; border-style: solid;">
+        <p style="font-size: 35px;">The section below shows the various comments found on blogs like Reddit, Quora etc. 
+            These comments highlights the physical appeal of each pokemon, which may further explain its popularity.
+            <br>
+            <br>
+            <span class="highlight-purple" style="font-size: 25px;">Hover over each image below to learn more.</span></p>
+    </section>
+
+    <section>
+
+        <div class=design-card>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="charizardCard.jpeg"> <!--image source: https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png-->
+                </div>
+                <div class=content>
+                    <h3>Charizard</h3>
+                    <br>
+                    <a href="https://www.reddit.com/r/pokemon/comments/oyfx02/what_makes_charizard_such_a_cool_character_design/">"What makes charizard such a cool character design?"</a>
+                    <br>
+                    <br>
+                    <p><b>iamverymature69:</b> "...he’s a cool fire breathing lizard with wings and the simplicity and coolness suits him."</p>
+                    <br>
+                    <P><b>ImATwat:</b> "Good, simple design with a nice colour palette."</P>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="umbreonCard.jpeg"> <!--image source:https://archives.bulbagarden.net/media/upload/thumb/e/e1/0197Umbreon.png/1200px-0197Umbreon.png-->
+                </div>
+                <div class=content>
+                    <h3>Umbreon</h3>
+                    <br>
+                    <a href="https://pop-goes-the-sneasel.tumblr.com/post/629015695882092545/my-favorite-pokemon-umbreon-no-need-to-be-nicer">Post on Tumblr</a>
+                    <br>
+                    <br>
+                    <p>"<b>pop-goes-the-sneasel:</b> It’s got a slick, sleek design with a bit of edge to it...great vibes all around. No wonder it’s the most-popular pokemon of Gen II!"</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="rayquazaCard.png"> <!--image source: https://www.kindpng.com/picc/m/394-3941699_pokmon-rayquaza-freetoedit-rayquaza-pokemon-transparent-background-hd.png-->
+                </div>
+                <div class=content>
+                    <h3>Rayquaza</h3>
+                    <br>
+                    <a href="https://www.reddit.com/r/pokemon/comments/t5qolh/best_designed_legendary_pok%C3%A9mon/">"Best designed legendary Pokémon!"</a>
+                    <br>
+                    <br>
+                    <p><b>retslagoon:</b> "Rayquaza is always #1 for me and its Mega form is stunning."</p>
+                    <br>
+                    <p><b>Debate_Careless:</b> "...Rayquaza Pretty straight forward. Cool design, especially its mega form..."</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="lucarioCard.jpg"><!--image source: http://clipart-library.com/data_images/45249.jpg-->
+                </div>
+                <div class=content>
+                    <h3>Lucario</h3>
+                    <br>
+                    <a href="https://aminoapps.com/c/pokemon/page/blog/popularity-analysis-lucario/Bjhw_u5j2pQ0e6ZPPVr5eovwx4dl0v">"Popularity Analysis: Lucario"</a>
+                    <br>
+                    <br>
+                    <p><b>illustr8bit:</b> "It is said that his design was based off of the Egyptian God Anubis. Anubis is a God of whom performed judgment on the souls, or 'auras' of the dead. Being based off of an ancient diety could have lead to its popularity."</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="chandelureCard.png"> <!--image source: https://www.kindpng.com/picc/m/252-2527808_global-link-pokemon-chandelure-hd-png-download.png-->
+                </div>
+                <div class=content>
+                    <h3>Chandelure</h3>
+                    <br>
+                    <a href="https://www.reddit.com/r/pokemon/comments/fi9oj6/what_chandelure_a_beloved_object_pokemon/">"What makes Chandelure a beloved object pokemon?"</a>
+                    <br>
+                    <br>
+                    <p><b>fanSlowpoke:</b> "I think ... its design is simple yet elegant that makes Chandelure special."</p>
+                    <br>
+                    <p><b>procouchpotatohere:</b> "...its cute yellow eyes are a great match aesthetically."</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="greninjaCard.jpeg"> <!--image source: https://archives.bulbagarden.net/media/upload/thumb/d/d9/0658Greninja.png/1200px-0658Greninja.png-->
+                </div>
+                <div class=content>
+                    <h3>Greninja</h3>
+                    <br>
+                    <a href="https://www.reddit.com/r/pokemon/comments/76620v/thoughts_on_greninja/">"Thoughts on Greninja"</a>
+                    <br>
+                    <br>
+                    <p><b>Shortfuzd:</b> "I love it. I love the design. It combines two things I love, frogs and ninjas."</p>
+                    <br>
+                    <p><b>Sombrero_Tanooki:</b> "...but its design really grew on me when I saw it in motion. Ninja characters are always great..."</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="mimikyuCard.jpeg"> <!--image source: https://i.pinimg.com/originals/1e/6a/98/1e6a98ffe3f0130b0938fb423dfed4d9.png-->
+                </div>
+                <div class=content>
+                    <h3>Mimikyu</h3>
+                    <br>
+                    <a href="https://pop-goes-the-sneasel.tumblr.com/post/633539116017057792/do-mimikyu-please-d">Post on Tumblr</a>
+                    <br>
+                    <br>
+                    <p>"Mimikyu is absolutely fantastic. It combines cute with creepy marvellously, in a way no other pokemon does, with its scrawled-on Pikachu face managing to be nearly as iconic as the electric mouse itself."</p>
+                </div>
+            </div>
+            <div class=card>
+                <div class=image>
+                    <img href="#" src="dragapultCard.jpeg"> <!--image source: https://assets.pokemon.com/assets/cms2/img/pokedex/full/887.png-->
+                </div>
+                <div class=content>
+                    <h3>Dragaupult</h3>
+                    <br>
+                    <a href="https://gamefaqs.gamespot.com/boards/259372-pokemon-sword/78638006?page=2">"Dragapult is the best pseudo and there's no discussion."</a>
+                    <br>
+                    <br>
+                    <p><b>Tomoasagaz:</b> "I absolutely love Dragapult's design, one of my top 10 Pokemon, it's badass, but still cute in some ways."</p>
+                    <br>
+                    <p><b>nd9k:</b> "Agreed. Looks amazing."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center; font-size: 35px; padding:0 2%; border-style: solid;"">
+        <h1>In conclusion, the appeal of the top Pokemon in 2020 can be attributed to factors like
+        BASE STATS, ANIME APPEARANCES and PHYSICAL DESIGN.</h1>
+    </section>
+
+    <section>
+        <h1>References</h1>
+    </section>
 </body>
 
 </html>

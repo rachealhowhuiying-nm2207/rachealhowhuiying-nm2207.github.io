@@ -466,17 +466,17 @@ new Chart(animeChart,
       scale: {
         ticks: {
           beginAtZero: true,
-          max: 150}
+          max: 45}
         },
         maintainAspectRatio: false,
         legend: {
-            display: false,
+            display: true,
         },
         title: {
             display: true,
             text:"Number of Appearances in Anime Series/Movies",
             fontFamily: "TrebuchetMS",
-            fontSize: 24,
+            fontSize: 45,
             fontColor: 'rgb(100,20,0)',
         }
     }
@@ -495,57 +495,57 @@ const statsData ={
       label: "Charizard",
       data: [78,84,78,109,85,100],
       borderWidth: 3,
-      backgroundColor: rgba(255, 159, 64, 0.2),
-      borderColor: rgb(255, 159, 64),
+      backgroundColor: 'rgba(255, 159, 64, 0.2)',
+      borderColor: 'rgb(255, 159, 64)',
     },
     {
       label: "Umbreon",
       data: [95,65,110,60,130,65],
       borderWidth: 3,
-      backgroundColor: rgba(74, 87, 93, 0.2),
-      borderColor: rgb(2, 3, 3),
+      backgroundColor: 'rgba(74, 87, 93, 0.2)',
+      borderColor: 'rgb(2, 3, 3)',
     },
     {
       label: "Rayquaza",
       data: [105,150,90,150,90,95],
       borderWidth: 3,
-      backgroundColor: rgba(88, 158, 125, 0.2),
-      borderColor: rgb(88, 158, 125),
+      backgroundColor: 'rgba(88, 158, 125, 0.2)',
+      borderColor: 'rgb(88, 158, 125)',
     },
     {
       label: "Lucario",
       data: [70,110,70,115,70,90],
       borderWidth: 3,
-      backgroundColor: rgba(110, 164, 187, 0.2),
-      borderColor: rgb(110, 164, 187),
+      backgroundColor: 'rgba(110, 164, 187, 0.2)',
+      borderColor: 'rgb(110, 164, 187)',
     },
     {
       label: "Chandelure",
       data: [60,55,90,145,90,80],
       borderWidth: 3,
-      backgroundColor: rgba(117,124,187, 0.2),
-      borderColor: rgb(117,124,187),
+      backgroundColor: 'rgba(117,124,187, 0.2)',
+      borderColor: 'rgb(117,124,187)',
     },
     {
       label: "Greninja",
       data: [72,95,67,103,71,122],
       borderWidth: 3,
-      backgroundColor: rgba(53, 70, 152, 0.2),
-      borderColor: rgb(53, 70, 152),
+      backgroundColor: 'rgba(53, 70, 152, 0.2)',
+      borderColor: 'rgb(53, 70, 152)',
     },
     {
       label: "Mimikyu",
       data: [55,90,80,50,105,96],
       borderWidth: 3,
-      backgroundColor: rgba(215, 207, 172, 0.2),
-      borderColor: rgb(215, 207, 172),
+      backgroundColor: 'rgba(215, 207, 172, 0.2)',
+      borderColor: 'rgb(215, 207, 172)',
     },
     {
       label: "Dragapult",
       data: [88,120,75,100,75,142],
       borderWidth: 3,
-      backgroundColor: rgba(92,200,199, 0.2),
-      borderColor: rgb(66,87,101),
+      backgroundColor: 'rgba(92,200,199, 0.2)',
+      borderColor: 'rgb(66,87,101)',
     },
   ]
 }
@@ -554,6 +554,7 @@ new Chart(barChart,
     type: "bar",
     data: statsData,
     options: { 
+      responsive: true,
         maintainAspectRatio: false,
         legend: {
             display: true
@@ -567,3 +568,4 @@ new Chart(barChart,
         }
     }
 });
+
