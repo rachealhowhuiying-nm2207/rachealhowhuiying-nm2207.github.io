@@ -69,7 +69,6 @@ nav {
 }
 
 
-
 /*format the sections in the datastory*/
 /*animation source: https://www.sliderrevolution.com/resources/css-animations-on-scroll/ Full Screen Vertical Scroll Snap*/
 html,
@@ -85,7 +84,6 @@ html {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,17 +131,6 @@ section {
   font-display: swap;
 }
 
-
-/*format the boxForContent, reference: https://linuxhint.com/how-to-make-html-container-box-in-html/*/
-.boxForContent {
-  display: flexbox;
-  padding: 10px;
-  margin: 30px 110px;
-  text-align: center;
-  width: 85%;
-  height: 300px;
-  border: rgb(139, 136, 235) 5px solid;
-}
 
 /*format the togepi image*/
 .pokeball {
